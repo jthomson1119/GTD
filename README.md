@@ -5,4 +5,6 @@ Global Terrorism Database
 
 ### Once the initial EDA was performed I wanted to look at the events attributed to "Unknown" organizations and see how a machine learning model would perform when tasked with reclassifying the events to known organizations.
 
+### For viewing the analysis on GitHub- open up "eda.ipynb" file to view the exploratory data analysis and characterization of major organizations. Open up "preds.ipynb" to look at reclassifying events classified "Unknown" into new labels of other known organizations. 
+
 ### To recreate the code: clone the repo and download the data from https://www.start.umd.edu/gtd/access/. The distribution used in this analysis was the '0617dist' edition (there is a newer distribution available which includes the year 2018).
