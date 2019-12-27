@@ -1,0 +1,138 @@
+NAME,useful,type,notes,useful_str,clean,
+eventid,y,txt,,#NAME?,y,
+iyear,n,,,,y,
+imonth,n,,,,y,
+iday,n,,,,y,
+approxdate,n,,,,y,
+extended,y,dummy,,,y,
+resolution,y,txt,if extended then date of resolution,,n,na
+country,n,cat,geo,,y,
+country_txt,y,cat,geo,,y,
+region,n,cat,geo,,y,
+region_txt,y,cat,geo,,y,
+provstate,y,cat,geo,,n,na
+city,y,cat,geo,,n,na
+latitude,y,txt,geo,,n,na
+longitude,y,txt,geo,,n,na
+specificity,n,txt,geo,,n,na
+vicinity,n,txt,geo,,n,neg
+location,q,txt,geo,,n,na
+summary,y,txt,,,y,
+crit1,y,dummy,"Criterion 1: POLITICAL, ECONOMIC, RELIGIOUS, OR SOCIAL GOAL (CRIT1)",,y,
+crit2,y,dummy,top_weapon = g,,y,
+crit3,y,dummy,Criterion 3: OUTSIDE INTERNATIONAL HUMANITARIAN LAW (CRIT3),,y,
+doubtterr,y,dummy,good for ‘unknown’ incidents,,n,neg
+alternative,n,cat,if doubtterr,,y,
+alternative_txt,y,cat,if doubtterr,,y,
+multiple,y,dummy,,,y,
+success,y,dummy,,,y,
+suicide,y,dummy,,,y,
+attacktype1,n,cat,"type of attack, most important/goal supersedes others",,y,
+attacktype1_txt,y,cat,,,y,
+attacktype2,q,cat,,,y,
+attacktype2_txt,q,txt,,,y,
+attacktype3,n,,,,y,
+attacktype3_txt,n,,,,y,
+targtype1,n,cat,,,y,
+targtype1_txt,y,cat,,,y,
+targsubtype1,n,cat,,,n,na
+targsubtype1_txt,y,cat,,,n,na
+corp1,y,txt,name of entity targeted //// unknown,,n,na
+target1,y,txt,specifies target,,n,na
+natlty1,n,cat,nationality of target,,n,na
+natlty1_txt,y,cat,,,n,na
+targtype2,n,,,,n,na
+targtype2_txt,n,,,,n,na
+targsubtype2,n,,,,n,na
+targsubtype2_txt,n,,,,n,na
+corp2,n,,,,n,na
+target2,n,,,,n,na
+natlty2,n,,,,n,na
+natlty2_txt,n,,,,n,na
+targtype3,n,,,,n,na
+targtype3_txt,n,,,,n,na
+targsubtype3,n,,,,n,na
+targsubtype3_txt,n,,,,n,na
+corp3,n,,,,n,na
+target3,n,,,,n,na
+natlty3,n,,,,n,na
+natlty3_txt,n,,,,n,na
+gname,y,txt,name of org,,y,
+gsubname,y,txt,subname of org,,n,na
+gname2,n,,,,n,na
+gsubname2,n,,,,n,na
+gname3,n,,,,n,na
+gsubname3,n,,,,n,na
+motive,y,txt,if known (applies only after 1997),,n,na
+guncertain1,n,,,,n,na
+guncertain2,n,,,,n,na
+guncertain3,n,,,,n,na
+individual,y,dummy,If 1 then likely perps not affiliated with specific org,,y,
+nperps,y,quant,num perps,,n,na
+nperpcap,y,quant,num perps captured,,n,na
+claimed,y,dummy,group/indivs claim responsibility,,n,na|neg
+claimmode,n,cat,,,n,na
+claimmode_txt,y,cat,"txt of claim mode (letter, call pre, call post incident, email, video, note…)",,n,na
+claim2,n,,,,n,na
+claimmode2,n,,,,n,na
+claimmode2_txt,n,,,,n,na
+claim3,n,,,,n,na
+claimmode3,n,,,,n,na
+claimmode3_txt,n,,,,n,na
+compclaim,y,dummy,more than one group claimed separate responsibility,,n,na|neg
+weaptype1,n,cat,,,y,
+weaptype1_txt,y,cat,,,y,
+weapsubtype1,n,cat,,,n,na
+weapsubtype1_txt,y,cat,,,n,na
+weaptype2,q,,,,n,na
+weaptype2_txt,q,,,,n,na
+weapsubtype2,q,,,,n,na
+weapsubtype2_txt,q,,,,n,na
+weaptype3,n,,,,n,na
+weaptype3_txt,n,,,,n,na
+weapsubtype3,n,,,,n,na
+weapsubtype3_txt,n,,,,n,na
+weaptype4,n,,,,n,na
+weaptype4_txt,n,,,,n,na
+weapsubtype4,n,,,,n,na
+weapsubtype4_txt,n,,,,n,na
+weapdetail,y,txt,,,n,na
+nkill,y,quant,,,n,na
+nkillus,q,quant,,,n,na
+nkillter,y,quant,,,n,na
+nwound,y,quant,,,n,na
+nwoundus,q,quant,,,n,na
+nwoundte,y,quant,,,n,na
+property,y,dummy,,,n,na
+propextent,n,cat,,,n,na
+propextent_txt,y,txt,,,n,na
+propvalue,y,quant,,,n,na
+propcomment,y,txt,,,n,na
+ishostkid,y,dummy,hostages/kidnapped occurred?,,n,na
+nhostkid,y,quant,num hostages/kidnapped,,n,na
+nhostkidus,q,quant,US host/kids,,n,na
+nhours,y,quant,,,n,na
+ndays,y,quant,,,n,na
+divert,y,txt,if hostages/kidnapping-→ where perps diverted/moved hostages to,,n,na
+kidhijcountry,y,txt,country kidnap/hijac was resolved in,,n,na
+ransom,y,dummy,ransom requested?,,n,na
+ransomamt,y,quant,ransom amount requested,,n,na
+ransomamtus,n,,,,n,na
+ransompaid,y,quant,ransom amount paid,,n,na
+ransompaidus,n,,,,,
+ransomnote,y,txt,supplemental notes on ransom request (avail after 1997),,,
+hostkidoutcome,n,cat,outcomes of host/kidnapping,,,
+hostkidoutcome_txt,y,txt,,,,
+nreleased,y,quant,num victims survived,,,
+addnotes,y,txt,additional notes on incident,,,
+scite1,n,,,,,
+scite2,n,,,,,
+scite3,n,,,,,
+dbsource,n,,,,,
+INT_LOG,n,,,,,
+INT_IDEO,n,,,,,
+INT_MISC,n,,,,,
+INT_ANY,n,,,,,
+related,n,,,,,
+date_obj,y,??,,,,
+weekday,y,date,,,,
